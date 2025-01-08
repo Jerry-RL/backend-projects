@@ -1,0 +1,19 @@
+{
+  "name": "@backend-projects/task-cli",
+  "version": "1..0.0",
+  "description": "A simple task tracker CLI",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "task-cli": "dist/index.js"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "dev": "ts-node src/index.ts",
+    "start": "node dist/index.js"
+  },
+  "devDependencies": {
+    "tslib": "^2.8.1",
+    "typescript": "^5.0.0"
+  }
+}
